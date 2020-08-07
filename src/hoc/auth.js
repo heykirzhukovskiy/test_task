@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { Redirect } from 'react-router-dom';
 
-const Ayth = (WrappedComponent) => {
+const Auth = (WrappedComponent) => {
     class WithAuthorization extends React.Component {
         static propTypes = {
             isAuthorized: PropTypes.bool
@@ -27,4 +27,4 @@ const Ayth = (WrappedComponent) => {
     return connect(mapStateToProps)(WithAuthorization);
 };
 
-export default Ayth;
+export default Auth;
